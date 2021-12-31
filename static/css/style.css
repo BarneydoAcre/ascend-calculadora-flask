@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid salmon; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
+    font-size: 16px;
+}
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.background {
+    width: 20%;
+    height: 60vh;
+    background-color: darkseagreen;
+    border-radius: 20px 40px 20px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layout-saida {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    min-height: 20%;
+    background-color: rgba(135, 130, 130, 0.254);
+    border-radius: 20px 40px 20px 40px;
+}
+#result {
+    padding: 10px;
+    font-size: 24px;
+}
+.teclado {
+    margin-top: 2%;
+}
+.num {
+    border: 1px solid rgb(88, 116, 69);
+    border-radius: 10%;
+    width: 4vw;
+    height: 8vh;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.num:hover{
+    background-color: rgba(135, 130, 130, 0.254);
+}
+.num-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height:100%;
+    border-radius: 20px 40px 20px 40px;
+}
+
+
+
+.operation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(88, 116, 69);
+    border-radius: 5px;
+    width: 100%;
+    height: 15%;
+}
+.operation:hover {
+    background-color: rgba(135, 130, 130, 0.254);
+}
+.operation-list{
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20%;
+    height:100%;
+    margin-right:10%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .background {
+        width: 40%;
+    }
+    .num {
+        width: 8vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .background {
+        width: 90%;
+    }
+    .num {
+        width: 16vw;
+    }
+}
